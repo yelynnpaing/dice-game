@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="caption">
+        <h6>@ createx By yelynnpaing</h6>
+    </div>
+    <div class="continer">
+        <h3 class="message" id="message">Player 1 Turn</h3>
+        <div class="diceImgGroup">
+            <img alt="" src="images/dice1.png" id="diceOne">
+            <div class="imgSpace"></div>
+            <img alt="" src="images/dice1.png" id="diceTwo">
+        </div>
+        <div class="userGroup">
+            <div class="user">
+                <div class="rollResult">
+                    <div class="userOneScoreBg scoreWidth"><span class="userOneScore"></span></div>
+                    <div class="userOneTotalScore">Total Score : <span id="totalScoreOne"></span></div>
+                </div>
+                <h4 class="userName">User 1</h4>
+                <div class="userBg active">
+                    <i class="fa-solid fa-user userIcon" style="color:blue"></i>
+                </div>
+            </div>
+            <div class="btnGroup">
+                <button class="btn rollDice active" id="rollDice">Roll</button>
+                <button class="btn resetGame active" id="resetGame">Reset Game</button>
+            </div>
+            <div class="user">
+                <div class="rollResult">
+                    <div class="userTwoScoreBg scoreWidth"><span class="userTwoScore"></span></div>
+                    <div class="userTwoToatalScore">Total Score : <span id="totalScoreTwo">0</span></div>
+                </div>
+                <h4 class="userName">User 2</h4>
+                <div class="userBg active">
+                    <i class="fa-solid fa-user userIcon" style="color:green"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
